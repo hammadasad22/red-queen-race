@@ -81,7 +81,7 @@ function RedQueenRace() {
             redQueen_alice.getAnimation().playbackRate = playbackRateRQ;
             adjustBackgroundPlayback();
         });
-    }, []);
+    });
 
     return (
         <div>
