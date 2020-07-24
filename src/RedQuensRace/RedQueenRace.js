@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import './style.css';
 import useWebanimations from "@wellyshen/use-web-animations"
 function RedQueenRace() {
-    let playbackRateRQ = 1;
-    let playbackRateBG = 0;
+    var playbackRateRQ = 1;
+    var playbackRateBG = 0;
     const sceneryFrames = [
         { transform: "translateX(100%)" },
         { transform: "translateX(-100%)" }
@@ -61,7 +61,9 @@ function RedQueenRace() {
         background1Movement.getAnimation().playbackRate = playbackRateBG;
         background2Movement.getAnimation().playbackRate = playbackRateBG;
     }
+    
     useEffect(() => {
+
         const fganimation = foreground1Movement.getAnimation();
 		fganimation.currentTime = fganimation.effect.getTiming().duration / 2;
 
